@@ -3,7 +3,7 @@ def intro():
     print("Hello this is a thing I am working on, please do not make fun of me.")
     print("I am very new to the coding life.")
 def process_input(answer):
-    if answer == "hi":
+    if answer == "hi" or answer == "hello" or answer == "hey":
         say_greeting()
     else:
         say_default()
@@ -19,7 +19,7 @@ def sayingpart():
     print("python for me was kinda hard to understand.")
     print("how about you?")
 def conversation(answer2):
-    if answer2 == "easy":
+    if answer2 == "easy" or answer2 == "no" or answer2 == "nope":
         say_lineone()
     else:
         say_linetwo()
@@ -125,13 +125,13 @@ def say_fine():
 
 
 def say_notfine():
-    print("okay, next time if you want to just type yes.")
+    print("okay, next time if you want to just type 'yes'")
 
 
 def sports():
     print("I play a lot of sports.")
 def soccertalk(answer4):
-    if answer4 == "yes":
+    if answer4 == "yes" or answer4 == "duh":
         same_girl()
     else:
         sorryforyou()
@@ -142,6 +142,21 @@ def same_girl():
 def sorryforyou():
     print("Maybe you should give it a try. You will never know if you do not try right?")
 
+def idea_input():
+    answer = input("what is your favorite abbreviation?")
+    if is_valid_input(answer):
+        print("lol is my favoite")
+    else:
+        print("I haven't heard of that before.")
+
+def is_valid_input(word):
+    valid = ["bms", "ttyl", "brb", "gtg", "lol", "omg", "lmao"]
+    if word in valid:
+        return True
+    else:
+        return False
+
+
 # --- Put your main program below! ---
 def main():
     intro()
@@ -149,26 +164,22 @@ def main():
         answer = input("(What will you say?)")
         process_input(answer)
         print("so let me tell you something!")
-        break
-    sayingpart()
-    while True:
+        sayingpart()
         answer2 = input("(Your response?)")
         conversation(answer2)
         print("I promise!")
-        break
-    anotherline()
-    while True:
+        anotherline()
         answer3 = input("(What is your answer?)")
         talking(answer3)
         print("thank you for staying this long!!!")
-        break
-    sports()
-    while True:
+        sports()
         answer4 = input("(what about you?)")
         soccertalk(answer4)
-        print("great")
+        idea_input()
+        answer5 = input("well this is fun isn't it?")
+        is_valid_input(answer5)
+        print("TTYL!")
         break
-
 
 
 # DON'T TOUCH! Setup code that runs your main() function.
