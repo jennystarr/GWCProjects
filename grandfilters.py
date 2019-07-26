@@ -148,13 +148,12 @@ def jenn_bluepic(flowerz):
     lightskyblue = (112,150,158)
 
     colorpixels = list(flowerz.getdata())
-    list_length = len(new_look)
+    list_length = len(colorpixels)
 
     new_look = []
 
     for p in pixel:
         intensity = p[0] + p[1] + p[2]
-
 
         if intensity < 190:
             new_look.append(navy)

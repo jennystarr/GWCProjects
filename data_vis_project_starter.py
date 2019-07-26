@@ -25,7 +25,7 @@ for tweet in tweetData:
 
 bigblob = TextBlob(bigtweet)
 filterd = {}
-commonwords = ("the", "a", "and", "about", "https", "for", "can", "out")
+commonwords = ("the", "a", "and", "about", "https", "for", "can", "out", "some", "see", "2017", "203", "jobs", "work", "800", "2030", "say", "more", "that", "amp", "but", "work", "that", "are")
 wordsList = bigblob.words
 for word in wordsList:
     if len(word) < 3:
