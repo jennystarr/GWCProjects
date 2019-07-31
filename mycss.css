@@ -2,3 +2,7 @@ h1 {
   background-color:#E01EEB}
 h3 {
   background-color:#E868D4}
+body{
+  background-image: url("clouds.jfif");
+  background-size: cover;
+}
