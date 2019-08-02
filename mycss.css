@@ -1,8 +1,41 @@
 h1 {
-  background-color:#E01EEB}
+  font-family: 'Notable', sans-serif;
+  color:#FF3441}
 h3 {
-  background-color:#E868D4}
+  }
 body{
-  background-image: url("clouds.jfif");
+  background-image: url("pink.svg");
   background-size: cover;
+}
+.btn-group button {
+  background-color: #FFCCE5;
+  border: 1px solid black;
+  color: black;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #FF87E1;
+}
+#hiddenvid {
+  display: none;
+}
+#hiddenvid2 {
+  display: none;
+}
+#hiddenvid3 {
+  display: none;
+}
+#hiddenvid4 {
+  display: none;
+}
+#hiddenvid5 {
+  display: none;
 }
